@@ -41,6 +41,143 @@ footer { grid-column: 1 / -1; font-size: 13px; color: var(--muted); border-top: 
 <div class="wrap">
   <header>
     <h1>PERFlight: privacy, terms and support</h1>
+    <span class="rev">Issue 3 · 21 November 2026</span>
+  </header>
+
+  <nav aria-label="Sections">
+    <a href="#privacy">1 · Privacy</a>
+    <a href="#terms">2 · Terms of use</a>
+    <a href="#support">3 · Support</a>
+  </nav>
+
+  <main>
+    <section id="privacy">
+      <h2><span class="sec">1</span>Privacy policy</h2>
+      <p>PERFlight is a helicopter performance, weight and balance and QRH tool for iPhone, iPad and Mac. It has no accounts, no advertising, no analytics and no tracking. The developer does not collect, receive or store any of your data.</p>
+
+      <h3>Your documents stay on your device</h3>
+      <p>The flight manual (RFM), QRH, Chart C and any chart packs you open are read on the device itself. The charts, figures and procedures read from them, your fleet records and your loading sheets are saved only in the app's storage on that device. Nothing is uploaded. Deleting the app deletes them.</p>
+      <p>An exported fleet file or chart pack goes only where you choose to save or send it.</p>
+
+      <h3>What leaves the device, and why</h3>
+      <p>Some features ask public services for data. These requests carry no name, account or device identifier from PERFlight.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Feature</th><th>Sent</th><th>To</th></tr></thead>
+        <tbody>
+          <tr><td>Weather (METAR)</td><td>The ICAO code of the station</td><td>metar.vatsim.net</td></tr>
+          <tr><td>Weather forecast and freezing level</td><td>Latitude and longitude of the place or route points</td><td>Open-Meteo (api.open-meteo.com)</td></tr>
+          <tr><td>Terrain along a route</td><td>The map tiles covering the route</td><td>Elevation tiles on Amazon Web Services</td></tr>
+          <tr><td>Maps</td><td>The map area shown</td><td>Apple Maps</td></tr>
+          <tr><td>Operator chart pack link</td><td>A download request to the link you enter</td><td>The host of that link (your operator's choice)</td></tr>
+          <tr><td>Family access</td><td>Nothing from you: the app downloads the list of family accounts</td><td>The developer's website (GitHub Pages)</td></tr>
+        </tbody>
+      </table></div>
+      <p>Each service handles requests under its own privacy policy.</p>
+
+      <h3>Subscriptions</h3>
+      <p>Purchases are made and managed by Apple. The developer receives no payment or personal details. If you buy the PERFlight + CHOCKS bundle, the App Store's signed receipt for it is stored in your own iCloud so that the other app can confirm the bundle. It stays in your iCloud account and is never sent to the developer.</p>
+      <p>Family access: the developer's family can use PERFlight free. To check this, the app reads an anonymous identifier of your iCloud account from Apple CloudKit and compares it with the list on the developer's website. The identifier stays on your device unless you choose to send it to the developer from the Subscription screen.</p>
+
+      <h3>Permissions</h3>
+      <ul>
+        <li><strong>Location</strong>, while the app is in use: to find the nearest weather station and to show your position against the route. The position is not stored or sent anywhere other than as listed above.</li>
+        <li><strong>Camera</strong>: the obstacle sight and photographing the caution panel to open the QRH procedure. Images are read on the device and not kept.</li>
+        <li><strong>Photos</strong>: only the pictures you choose (a chart, the caution panel, a Chart C), read on the device.</li>
+        <li><strong>Motion sensor</strong>: the tilt angle for the obstacle sight.</li>
+      </ul>
+
+      <h3>Children</h3>
+      <p>PERFlight is made for licensed pilots and is not directed at children.</p>
+
+      <h3>Changes</h3>
+      <p>Changes to this policy will be published on this page with a new issue date.</p>
+    </section>
+
+    <section id="terms">
+      <h2><span class="sec">2</span>Terms of use</h2>
+      <p class="note">PERFlight is a training and planning aid. It does not replace the approved Rotorcraft Flight Manual, its supplements or the operator's procedures. Check every result against the RFM before you rely on it.</p>
+      <ul>
+        <li>The aircraft data comes from documents you provide (RFM, QRH, Chart C) or from chart packs supplied by your operator. The app reads them automatically and can misread them. Review what the app read before you use it, and keep the review step for every new revision.</li>
+        <li>Results are interpolated from charts. They inherit the accuracy of the source document and of the reading, and they are only as current as the revision you loaded.</li>
+        <li>Weather comes from public sources and may be late, incomplete or wrong. Use official briefing sources for flight.</li>
+        <li>The pilot in command remains responsible for the performance, mass and balance and conduct of the flight.</li>
+        <li>You must have the right to use the documents you open in the app. Your operator's manuals remain their property, and PERFlight does not share them.</li>
+        <li>The app is provided as is, without warranty. To the extent the law allows, the developer is not liable for any loss arising from its use.</li>
+        <li>The Apple Standard Licensed Application End User License Agreement also applies.</li>
+      </ul>
+      <h3>Subscription</h3>
+      <ul>
+        <li>PERFlight: $9.99 a month or $79.99 a year. PERFlight + CHOCKS bundle: $11.99 a month or $99.99 a year. Prices in other currencies are set by the App Store for your country.</li>
+        <li>New subscribers get one month free. Without a subscription, the guide, density altitude and loading your documents stay available.</li>
+        <li>Payment is charged to your Apple Account at confirmation of purchase, or at the end of the free trial. The subscription renews automatically unless cancelled at least 24 hours before the end of the current period; renewal is charged within 24 hours before the period ends. Manage or cancel it in your App Store account settings.</li>
+        <li>The bundle unlocks both PERFlight and CHOCKS, whichever app it was bought in, on devices signed in to the same iCloud account.</li>
+      </ul>
+    </section>
+
+    <section id="support">
+      <h2><span class="sec">3</span>Support</h2>
+      <h3>Getting started</h3>
+      <ul>
+        <li><strong>Load your aircraft:</strong> Data › Your RFM (PDF). The app reads the performance charts and, for supported types, the Category A procedures, then shows them for your review.</li>
+        <li><strong>Weight and balance:</strong> W&amp;B › Fleet › + Aircraft. Read the Chart C from a PDF, a scan or a photo. If the record's figures do not add up (weight × CG ≠ moment), the app shows it and asks you to confirm against the signed record.</li>
+        <li><strong>QRH:</strong> QRH › load your QRH PDF, then search it or photograph the caution panel.</li>
+        <li>The in-app Guide (the book icon) explains each tab.</li>
+      </ul>
+      <h3>Contact</h3>
+      <p>Questions, a chart the app could not read, or a result that does not match the RFM: write to the developer, Daniel Blanco, at <a href="mailto:danielblanco@me.com">danielblanco@me.com</a>. Please say which aircraft, RFM revision and figure, and never send a document you are not allowed to share.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>PERFlight · Developer: Daniel Blanco</span>
+    <span>Training and planning aid. Not an approved flight manual.</span>
+  </footer>
+</div>
+
+</body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>PERFlight Privacy and Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column, a sticky section index on wide screens; set like a flight manual page (section, revision, page) */
+:root {
+  --bg: #f6f8f9; --paper: #ffffff; --fg: #172026; --muted: #56656f; --rule: #d6dee3; --accent: #0b6e8a; --warn-bg: #fff6e0; --warn-fg: #6b4a00;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0f1518; --paper: #151d21; --fg: #e3eaee; --muted: #9aabb5; --rule: #2a363c; --accent: #5cc3df; --warn-bg: #2b2412; --warn-fg: #f1d48a; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0f1518; --paper: #151d21; --fg: #e3eaee; --muted: #9aabb5; --rule: #2a363c; --accent: #5cc3df; --warn-bg: #2b2412; --warn-fg: #f1d48a; color-scheme: dark }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-block: 32px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; }
+header { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 2px solid var(--fg); padding-bottom: 12px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0; font-weight: 600; text-wrap: balance; }
+.rev { font-family: var(--f-mono); font-size: 13px; color: var(--muted); letter-spacing: .04em; }
+nav { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); align-self: start; display: grid; gap: 6px; font-size: 14px; }
+nav a { color: var(--muted); text-decoration: none; padding: 4px 0 4px 10px; border-left: 2px solid var(--rule); }
+nav a:hover, nav a:focus-visible { color: var(--accent); border-left-color: var(--accent); outline: none; }
+main { min-width: 0; display: grid; gap: 40px; }
+section { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 24px 28px; max-width: 70ch; }
+h2 { font-size: 21px; margin: 0 0 12px; font-weight: 600; display: flex; gap: 12px; align-items: baseline; text-wrap: balance; }
+h2 .sec { font-family: var(--f-mono); font-size: 13px; color: var(--accent); letter-spacing: .06em; }
+h3 { font-size: 16px; margin: 20px 0 6px; font-weight: 600; }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+.note { background: var(--warn-bg); color: var(--warn-fg); border-radius: 4px; padding: 12px 14px; font-weight: 500; }
+.tbl { overflow-x: auto; margin: 8px 0 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+a { color: var(--accent); }
+footer { grid-column: 1 / -1; font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 12px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+@media (max-width: 760px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } nav { position: static; display: flex; flex-wrap: wrap; gap: 6px 14px; } nav a { border-left: 0; padding: 0; } section { padding: 18px; } h1 { font-size: 25px; } }
+</style>
+
+</head><body>
+<div class="wrap">
+  <header>
+    <h1>PERFlight: privacy, terms and support</h1>
     <span class="rev">Issue 2 · 17 November 2026</span>
   </header>
 
