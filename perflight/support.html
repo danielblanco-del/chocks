@@ -4,6 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
+/* Layout: one reading column, a sticky section index on wide screens; set like a flight manual page (section, revision, page) */
 :root {
   --bg: #f6f8f9; --paper: #ffffff; --fg: #172026; --muted: #56656f; --rule: #d6dee3; --accent: #0b6e8a; --warn-bg: #fff6e0; --warn-fg: #6b4a00;
   --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -35,6 +36,7 @@ a { color: var(--accent); }
 footer { grid-column: 1 / -1; font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 12px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
 @media (max-width: 760px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } nav { position: static; display: flex; flex-wrap: wrap; gap: 6px 14px; } nav a { border-left: 0; padding: 0; } section { padding: 18px; } h1 { font-size: 25px; } }
 </style>
+
 </head><body>
 <div class="wrap">
   <header>
@@ -120,7 +122,7 @@ footer { grid-column: 1 / -1; font-size: 13px; color: var(--muted); border-top: 
         <li>The in-app Guide (the book icon) explains each tab.</li>
       </ul>
       <h3>Contact</h3>
-      <p>Questions, a chart the app could not read, or a result that does not match the RFM: write to the developer, Daniel Blanco, through the Support link on the App Store page. Please say which aircraft, RFM revision and figure, and never send a document you are not allowed to share.</p>
+      <p>Questions, a chart the app could not read, or a result that does not match the RFM: write to the developer, Daniel Blanco, at <a href="mailto:danielblanco@me.com">danielblanco@me.com</a>. Please say which aircraft, RFM revision and figure, and never send a document you are not allowed to share.</p>
     </section>
   </main>
 
@@ -129,4 +131,5 @@ footer { grid-column: 1 / -1; font-size: 13px; color: var(--muted); border-top: 
     <span>Training and planning aid. Not an approved flight manual.</span>
   </footer>
 </div>
+
 </body></html>
